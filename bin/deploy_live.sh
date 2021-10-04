@@ -4,8 +4,9 @@
 branch="master"
 app_dir="/var/www/node-app-deploy"
 
-#pull from git
 cd $app_dir
+
+#pull from git
 git fetch --all
 git reset --hard origin/$branch
 git pull origin $branch
